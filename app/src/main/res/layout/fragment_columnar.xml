@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.brandon.chavez.android.app.cryptapp.MainActivity$PlaceholderFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fc_tvHelloWorld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="@string/fc_tvHelloWorld" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fc_fabColumnar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:src="@drawable/ic_done_white_24dp" />
+            </FrameLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/fc_rbEncriptar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/fc_rbEncriptar" />
+
+                <RadioButton
+                    android:id="@+id/fc_rbDesencriptar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fc_rbDesencriptar" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/fc_llEncriptar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/fc_etClaveEncriptar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/fc_etClaveEncriptar"
+                    android:inputType="textCapCharacters" />
+
+                <EditText
+                    android:id="@+id/fc_etTextoEncriptar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/fc_etTextoEncriptar"
+                    android:inputType="textCapCharacters" />
+
+                <TableLayout
+                    android:id="@+id/fc_tlEncriptacionColumnar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/fc_tvTextoEncriptar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/vacio" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CryptApp</string>
+    <string name="action_settings">Cerrar</string>
+    <string name="vacio"></string>
+
+    <!-- FRAGMENT POLIALFABETO -->
+    <string name="fp_tvHelloWorld">METODO POLIALFABETO</string>
+    <string name="fp_rbEncriptar">Encriptar</string>
+    <string name="fp_rbDesencriptar">Desencriptar</string>
+    <string name="fp_etTextoEncriptar">Digitar texto a encriptar</string>
+    <string name="fp_etTextoDesencriptar">Digitar texto a desencriptar</string>
+    <!-- /FRAGMENT POLIALFABETO -->
+
+    <!-- FRAGMENT COLUMNAR -->
+    <string name="fc_tvHelloWorld">METODO COLUMNAR</string>
+    <string name="fc_rbEncriptar">Encriptar</string>
+    <string name="fc_rbDesencriptar">Desencriptar</string>
+    <string name="fc_etClaveEncriptar">Digitar clave de encriptacion</string>
+    <string name="fc_etTextoEncriptar">Digitar texto a encriptar</string>
+    <!-- /FRAGMENT COLUMNAR -->
+</resources>
